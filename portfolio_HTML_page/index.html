@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Melanie Jane<br>Bond</b></h3>
+  <img src="/img/MJB lead preschool teacher.JPG" style="width:100%" onclick="onClick(this)" alt="Melanie as a lead preschool teacher">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <!-- <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>  -->
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Melanie Jane Bond</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <!-- <div class="w3-row">
+    <div class="w3-third">
+      <img src="/img/MJB lead preschool teacher.JPG" style="width:100%" onclick="onClick(this)" alt="Melanie as a lead preschool teacher">
+    </div> -->
+<!--     
+    <div class="w3-third">
+      <img src="/img/Pumpkin Cookies, etc..jpg" style="width:100%" onclick="onClick(this)" alt="Pumpkin Cookies made by Melanie!">
+    </div>
+  </div> -->
+
+  <!-- //I would like to move these images to the best places on the site! For example, one could be in the sidebar under my name,
+  //another could be under the "about me" tagline
+  //and the last one could be somewhere in the footer -->
+
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div> -->
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+        <h3>Professional Jr. Software Developer</h3>
+        <h4>in Nashville, TN</h4>
+    <img src="/img/MJB made a cake!.jpeg" alt="Family and friends are excited to eat Melanie's cake!" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4><strong>An enthusiastic Team Player and determined Developer, 
+          I discovered programming while I was working with one-year-olds and 
+          I couldn’t be happier to apply my fascination with complex systems to the world of software.</strong></h4>
+
+<p>For years, I was dreaming of a place where the learning never ends, teamwork really is what makes the dream work, 
+    and the products being produced go farther than the grams of deliciousness in a chocolate chip cookie? It seems 
+    I found my job-promised-land in Software Development.</p>
+<p>After several years in service industries (baking and teaching 
+    young children), I began to wonder whether there was a way I could serve on a larger scale, I took an interest in 
+    how successful websites are run and why. Some online study showed me programs I could begin on my own, but, I had a 
+    friend working in Software who advised me to find a reliable local school where the instructors could help me make
+    sure I was learning everything the right way. I submitted an application to Nashville Software School later that month 
+    and here I am today, building apps in React and learning Python.</p>
+<h4><strong>Building tools that meet needs and solve problems brings me great joy! It's also a perk that in development, we work
+    in teams much of the time; people are by far my favorite complex organisms.</strong></h4>
+      <h6>email: <strong>miss.bond2@gmail.com</strong></h6>
+      <h6>tel: <strong>615 734 9981</strong></h6>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Projects</h4>
+      <p class="w3-wide">The Chores Board</p>
+      <div class="w3-white">
+        <img src="/img/FrontEnd Capstone Main Page.JPG" style="width:100%" onclick="onClick(this)" alt="Pumpkin Cookies made by Melanie!">
+      </div>
+      <p class="w3-wide">Nutshell in Vanilla JavaScript</p>
+      <div class="w3-white">
+        <img src="/img/Nutshell Vanilla JavaScript Dashboard Page +.JPG" style="width:100%" onclick="onClick(this)" alt="Pumpkin Cookies made by Melanie!">
+    </div>
+        <!-- <p class="w3-wide">Python</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">75%</div>
+      </div> -->
+      <!-- <p class="w3-wide">CSS + HTML</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:60%">70%</div>
+      </div> -->
+      <p><a href="https://github.com/MelanieJaneBond" class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Click to see my Git Hub Repository</a></p>
+      <hr class="w3-opacity">
+
+      <h4 class="w3-padding-16">Experience</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Preschool Teacher at High Hopes Development Center</li>
+            <li class="w3-padding-16">Worked as a Lead Teacher with 12-24 month olds for one year.</li>
+            <li class="w3-padding-16">Prior to becoming a Lead, I worked as a Co-Teacher and Floater for two years.</li>
+            <li class="w3-padding-16">High Hopes is a non-profit preschool that prioritizes children with special needs. 
+                Time there taught me how beautiful diversity is; the richest moments
+                in life come when we see and value an individual for their unique loveliness.
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://www.highhopesforkids.org" class="w3-button w3-white w3-padding-large">Website for High Hopes</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Baker/Kitchen Manager at Bond Coffee Company</li>
+            <li class="w3-padding-16">Worked as the sole baker at a coffee shop for three years.</li>
+            <li class="w3-padding-16">Created my own products and developed a consistent customer base for those products.</li>
+            <li class="w3-padding-16">Specialized in gluten-free and allergy-sensitive pastries.</li>
+            <li class="w3-padding-16">I also managed the menu and the team of people who produced non-bakery goods served in the shop.</li>
+            <li class="w3-light-grey w3-padding-24">
+              <a href="https://www.linkedin.com/in/melanie-jane-007/" class="w3-button w3-white w3-padding-large">Visit LinkedIn for more details</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you think you might want to hire me? Send me a message and we can start talking; I love working with a purpose!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name / Company Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>Links to Important Things:</h3>
+        <a href="" type="submit" class="w3-button w3-block w3-black w3-margin-bottom">PDF of Resume</a>
+        <a href="https://github.com/MelanieJaneBond" type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Git Hub Repository</a>      
+        <a href="https://www.linkedin.com/in/melanie-jane-007/" type="submit" class="w3-button w3-block w3-black w3-margin-bottom">LinkedIn</a>
+        <h4>Projects:</h4>
+        <a href="https://github.com/MelanieJaneBond/Chores-Board-Capstone" type="submit" class="w3-button w3-block w3-black w3-margin-bottom">The Chores Board</a>
+        <a href="https://github.com/MelanieJaneBond/Nutshell-Vanilla-Javacript" type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Nutshell 1</a>
+    </div>
+    
+    <div class="w3-third">
+        <h3>A Sample from my Baking Days</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/img/Pumpkin Cookies, etc..jpg" style="width:100%" onclick="onClick(this)" alt="Pumpkin Cookies made by Melanie!">
+            <span class="w3-large">Pumpkin Cookies</span><br>
+            <span>at Bond Coffee Company in 2014</span>
+          </li>
+          <!-- <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li>  -->
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>Technologies I Used:</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Webpack</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Git Hub</span>
+          <span class="w3-tag w3-black w3-margin-bottom">Python</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">JavaScript</span>
+          <span class="w3-tag w3-black w3-margin-bottom">ReactJS</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">HTML-5</span>
+          <span class="w3-tag w3-black w3-margin-bottom">CSS-3</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bootstrap</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
